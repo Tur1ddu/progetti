@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="file.js"></script>
+        <link href="file.css" media="all" type="text/css" rel="stylesheet" />
+        <title>CALCOLATRICE</title>
+    </head>
+    <body>
+        <form >
+            <input class="display" type="number" readonly disabled id="inp">
+            <input type="text" hidden id="oper">
+            <input type="number" hidden id="numer">
+        </form>
+        <button class="button" onclick='tasto("7")'> 7 </button>
+        <button class="button" onclick='tasto("8")'> 8 </button>
+        <button class="button" onclick='tasto("9")'> 9 </button>
+        <button class="operator" onclick='operator("/")'> / </button>
+        <button class="button" onclick='tasto("4")'> 4 </button>
+        <button class="button" onclick='tasto("5")'> 5 </button>
+        <button class="button" onclick='tasto("6")'> 6 </button>
+        <button class="operator" onclick='operator("*")'> * </button>
+        <button class="button" onclick='tasto("1")'> 1 </button>
+        <button class="button" onclick='tasto("2")'> 2 </button>
+        <button class="button" onclick='tasto("3")'> 3 </button>
+        <button class="operator" onclick='operator("+")'> + </button>
+        <button class="button" onclick='reset("C")'> C </button>
+        <button class="button" onclick='tasto("0")'> 0 </button>
+        <button class="button" onclick='uguale("=")'> = </button>
+        <button class="operator" onclick='operator("-")'> - </button>
+    </body>
+</html>
