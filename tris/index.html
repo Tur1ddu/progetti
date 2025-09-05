@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="tris.js"></script>
+        <link href="tris.css" media="all" type="text/css" rel="stylesheet" />
+        <title>TRIS</title>
+    </head>
+    <body>
+        <header>QUETSO E' IL MIO GIOCO DI TRIS</header>
+        <div id="sceltaGiocatore2">
+            <div class="it's time to chose" id="sceltaGiocatore">
+                <h2>GIOCATORE 1 COSA SCHEGLI?</h2>
+                <button class="giocatore" onclick='scelta("X")'>X</button>
+                <button class="giocatore" onclick='scelta("O")'>O</button>
+             </div>
+        </div>
+    <!-- mettere un H2 per l'allert di vincita -->
+        <h3 id= "h3"></h3>
+        <h2 id= "h2"> </h2>
+        <div class="tabella">            
+            <div class="primariga">
+                <button class="button"  id="1" onclick="casella(1)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="2" onclick="casella(2)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="3" onclick="casella(3)"> </button> <!-- un solo id o niente id -->
+            </div>
+
+            <div class="secondariga">
+                <button class="button"  id="4" onclick="casella(4)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="5" onclick="casella(5)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="6" onclick="casella(6)"> </button> <!-- un solo id o niente id -->
+            </div>
+
+            <div class="terzariga">
+                <button class="button"  id="7" onclick="casella(7)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="8" onclick="casella(8)"> </button> <!-- un solo id o niente id -->
+                <button class="button"  id="9" onclick="casella(9)"> </button> <!-- un solo id o niente id -->
+            </div>
+        </div>
+        <button class="reset" onclick="reset()">RESET</button>
+        <img class="game" src="https://preview.redd.it/game-no-ai-v0-rthf69csuw4f1.jpg?width=1080&crop=smart&auto=webp&s=f12d49fae542e0d1154bc216fb43d7a1613b8aa8">
+        <footer>SE PERDI SEI UN FINOCCHIO, SE VINCI SEI UN POMODORO</footer>
+    </body>
+    
+</html>
